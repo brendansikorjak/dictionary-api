@@ -1,28 +1,32 @@
 {
-    "name": "dictionary API",
+    "name": "dictionary-api",
     "version": "1.0.0",
     "description": "API ",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js",
-      "devStart": "nodemon server.js"
+        "start": "node server.js",
+        "devStart": "nodemon server.js",
+        "deploy": "npx serverless deploy -s dev",
+        "remove": "npx serverless remove -s dev"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/brendansikorjak/dictionary-api.git"
+        "type": "git",
+        "url": "git+https://github.com/brendansikorjak/dictionary-api.git"
     },
     "author": "Brendan Sikorjak",
     "license": "MIT",
     "dependencies": {
-      "express": "^4.17.1",
-      "mongoose": "^7.0.2",
-      "mongodb": "^5.1.0"
+        "dotenv": "^16.3.1",
+        "express": "^4.17.1",
+        "mongodb": "^5.1.0",
+        "mongoose": "^7.0.2",
+        "serverless": "^3.34.0"
     },
     "devDependencies": {
-      "nodemon": "^2.0.22"
+        "nodemon": "^2.0.22"
     },
     "bugs": {
-      "url": "https://github.com/brendansikorjak/dictionary-api/issues"
+        "url": "https://github.com/brendansikorjak/dictionary-api/issues"
     },
     "homepage": "https://github.com/brendansikorjak/dictionary-api#readme"
-  }
+}
